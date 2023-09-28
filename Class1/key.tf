@@ -13,9 +13,9 @@ resource "aws_s3_bucket" "bucket" {
   bucket = "aigerim987"
 }
 
-output "bucket_info" {
-  value = [
-    aws_s3_bucket.bucket.bucket,
-    aws_s3_bucket.bucket.arn
-  ]
+output bucket_info {
+value = [ 
+  aws_s3_bucket.bucket.bucket,
+  aws_s3_bucket.bucket.arn
+]
 }
